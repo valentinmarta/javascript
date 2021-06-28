@@ -1,16 +1,33 @@
-// desafio complementario
-alert('Hoy vamos a hacer sumas y multiplicaciones');
+// desafio clase 1
+let nombre = prompt('Hola, ingresa tu nombre por favor: ');
 
-let numero1 = Number(prompt('Por favor, ingrese un numero: '));
+if (nombre == "") {
+    alert('No ingresaste ningun nombre');
+}
+else {
+    alert('hola ' + nombre + ' te quiero ayudar con algunas restas y divisiones');
+}
 
-let numero2 = Number(prompt('Ingrese un segundo numero: '));
+let numero1 = Number(prompt('ingresa un numero:'));
 
-let suma = numero1 + numero2;
+let numero2 = Number(prompt('ingresa otro numero:'));
 
-let multiplicacion = numero1 * numero2;
+let resta = numero1 - numero2;
 
-alert('Si sumamos esos numeros nos da: ' + suma);
+let division = numero1 / numero2;
 
-alert('Y si los multiplicamos nos da: ' + multiplicacion);
+alert('El resultado de la resta es: ' + resta);
 
-alert('Saludos');
+alert('El resultado de la division es: ' + division);
+
+let pregunta = prompt('Una ultima pregunta, sos de Boca o de River?');
+
+if (pregunta == 'boca' || pregunta == 'Boca') {
+    alert('me caes bien aguante bokita el mas grande');
+}
+else if (pregunta == 'river' || pregunta == 'River') {
+    alert('no man como vas a ser de riBer AGUANTE BOKITA');
+}
+else {
+    alert('Respuesta no valida');
+}
