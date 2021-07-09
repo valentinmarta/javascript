@@ -1,33 +1,52 @@
-// desafio clase 1
+// Desafio clase 4
 let nombre = prompt('Hola, ingresa tu nombre por favor: ');
 
-if (nombre == "") {
-    alert('No ingresaste ningun nombre');
+while (nombre == "") {
+    alert ('No ingresaste ningun nombre')
+
+    nombre = prompt('Ingresa tu nombre porfavor')
 }
-else {
-    alert('hola ' + nombre + ' te quiero ayudar con algunas restas y divisiones');
+
+pregunta = prompt('De que pais sos?');
+
+alert('Hola ' + nombre + ' de ' + pregunta + ' bienvenido a mi pagina para sacar promedios');
+
+// Ciclo while para que menores de 18 no entren a la pagina
+alert('Por cuestiones de seguridad no podemos dejar que menores de 18 entren a la pagina');
+
+let repetir = Number(prompt('Cuantos años tenes?'));
+
+while (repetir < 18 ) {
+    alert ('Sos menor, no puedo dejar que ingreses a mi pagina');
 }
 
-let numero1 = Number(prompt('ingresa un numero:'));
+alert ('Ahora si empecemos')
 
-let numero2 = Number(prompt('ingresa otro numero:'));
+// Pide numeros para mandarlos a la funcion y sacar promedios
+A = parseInt(prompt('Ingresa el primer numero:'));
+B = parseInt(prompt('Ingresa el segundo numero:'));
 
-let resta = numero1 - numero2;
-
-let division = numero1 / numero2;
-
-alert('El resultado de la resta es: ' + resta);
-
-alert('El resultado de la division es: ' + division);
-
-let pregunta = prompt('Una ultima pregunta, sos de Boca o de River?');
-
-if (pregunta == 'boca' || pregunta == 'Boca') {
-    alert('me caes bien aguante bokita el mas grande');
+function promedio() {
+    resultado = (A + B) / 2;
+    return resultado;
 }
-else if (pregunta == 'river' || pregunta == 'River') {
-    alert('no man como vas a ser de riBer AGUANTE BOKITA');
+
+function mostrar(mensaje) {
+    alert('El promedio de esos dos numeros es: ' + mensaje);
 }
-else {
-    alert('Respuesta no valida');
+
+promedio();
+mostrar(resultado);
+
+// Ciclo while por si lo quiere hacer de nuevo
+pregunta = prompt('Quieres hacerlo de nuevo?').toLowerCase();
+
+while (pregunta == 'si') {
+    A = parseInt(prompt('Ingresa el primer numero:'));
+    B = parseInt(prompt('Ingresa el segundo numero:'));
+
+    promedio();
+    mostrar(resultado);
+
+    pregunta = prompt('Quieres hacerlo de nuevo?').toLowerCase();
 }
