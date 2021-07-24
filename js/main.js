@@ -50,3 +50,36 @@ while (pregunta == 'si') {
 
     pregunta = prompt('Quieres hacerlo de nuevo?').toLowerCase();
 }
+
+alert('Espero que te haya gustado, antes de terminar quisiera preguntarte...');
+
+const preguntas = ['Te gusto la pagina?', 'Hay algo que deberiamos mejorar?'];
+
+prompt(preguntas[0]);
+
+prompt(preguntas[1]);
+
+//agradecimiento
+alert ('Y ademas quisiera darle credito a todo el equipo que esta detras de esta pagina, ellos son...');
+
+class persona{
+    constructor (nombre, apellido) {
+       this.nombre = nombre;
+       this.apellido = apellido;
+    }
+    mostrar() {
+        alert (this.nombre + this.apellido);
+    }
+}
+
+let persona1 = new persona ('Valentin', ' Marta');
+
+let persona2 = new persona ('Valentin', ' Nicolas Marta');
+
+let persona3 = new persona ('Valentin', ' Marta Boggio')
+
+persona1.mostrar()
+
+persona2.mostrar()
+
+persona3.mostrar()
