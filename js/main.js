@@ -51,6 +51,7 @@ while (pregunta == 'si') {
     pregunta = prompt('Quieres hacerlo de nuevo?').toLowerCase();
 }
 
+//valoracion con array
 alert('Espero que te haya gustado, antes de terminar quisiera preguntarte...');
 
 const preguntas = ['Te gusto la pagina?', 'Hay algo que deberiamos mejorar?'];
@@ -59,7 +60,7 @@ prompt(preguntas[0]);
 
 prompt(preguntas[1]);
 
-//agradecimiento
+//agradecimiento con objeto
 alert ('Y ademas quisiera darle credito a todo el equipo que esta detras de esta pagina, ellos son...');
 
 class persona{
