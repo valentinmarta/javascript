@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css">
     <script src="/js/main.js"></script>
     <title>Document</title>
 </head>
 <body>
+
+<form action="" method="" id="formulario">
+    <fieldset>
     
+        <div id="form">
+            <h4 class="tituloForm">QUISIERA SABER QUE LE PARECIO LA PAGINA:</h4>
+        </div>
+
+        <label class="info" for="nombre">Nombre</label>
+        <input class="info" type="text" name="nombre">
+        <label class="info" for="apellido">Apellido</label>
+        <input class="info" type="text" name="apellido">
+        <label class="info" for="email">Correo electronico</label>
+        <input class="info" type="email" name="email">
+
+        <div>
+            Hombre <input class="sexo" type="checkbox" name="sexo" value="hombre"> 
+            Mujer <input class="sexo" type="checkbox" name="sexo" value="mujer"> 
+            Otros <input class="sexo" type="checkbox" name="sexo" value="otros"> 
+        </div>
+
+        <div>
+            <p class="reseña">Deje su reseña aqui:</p> 
+            <textarea class="texto" name="" id="" cols="60" rows="10"></textarea>
+        </div>
+
+        <input class="botones" type="reset" value="Borrar todo">
+        <input class="botones" type="submit" value="Enviar formulario">
+         
+    </fieldset>
+
+</form>
+
 </body>
 </html>

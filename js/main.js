@@ -1,4 +1,3 @@
-// Desafio clase 4
 let nombre = prompt('Hola, ingresa tu nombre por favor: ');
 
 while (nombre == "") {
@@ -14,7 +13,7 @@ alert('Hola ' + nombre + ' de ' + pregunta + ' bienvenido a mi pagina para sacar
 // Ciclo while para que menores de 18 no entren a la pagina
 alert('Por cuestiones de seguridad no podemos dejar que menores de 18 entren a la pagina');
 
-let repetir = Number(prompt('Cuantos años tenes?'));
+let repetir = parseInt(prompt('Cuantos años tenes?'));
 
 while (repetir < 18 ) {
     alert ('Sos menor, no puedo dejar que ingreses a mi pagina');
@@ -51,18 +50,23 @@ while (pregunta == 'si') {
     pregunta = prompt('Quieres hacerlo de nuevo?').toLowerCase();
 }
 
-//valoracion con array
-alert('Espero que te haya gustado, antes de terminar quisiera preguntarte...');
+//interaccion con html que no me deja crear h1
+let titulo = document.createElement("div");
 
-const preguntas = ['Te gusto la pagina?', 'Hay algo que deberiamos mejorar?'];
+titulo.innerHTML = "<h1>MI PAGINA</h1>"
 
-prompt(preguntas[0]);
+document.body.appendChild(titulo)
 
-prompt(preguntas[1]);
+//interaccion agregando h2 al titulo del formulario
+let padre = document.getElementById(form);
 
-//agradecimiento con objeto
-alert ('Y ademas quisiera darle credito a todo el equipo que esta detras de esta pagina, ellos son...');
+let h2 = document.createElement("h2");
 
+h2.innerHTML = "<h2>Por favor complete los siguientes datos: </h2>"
+
+padre.appendChild(h2);
+
+//guardando los nombres de los creadores
 class persona{
     constructor (nombre, apellido) {
        this.nombre = nombre;
@@ -73,14 +77,12 @@ class persona{
     }
 }
 
-let persona1 = new persona ('Valentin', ' Marta');
+let creador1 = new persona ('Valentin', ' Marta');
 
-let persona2 = new persona ('Valentin', ' Nicolas Marta');
+let creador2 = new persona ('Valentin', ' Nicolas Marta');
 
-let persona3 = new persona ('Valentin', ' Marta Boggio')
+let creador3 = new persona ('Valentin', ' Marta Boggio')
 
-persona1.mostrar()
+const creadores = [creador1, creador2, creador3]
 
-persona2.mostrar()
-
-persona3.mostrar()
+localStorage.setItem('creadores', JSON.stringify(creadores))

@@ -1,0 +1,23 @@
+input {
+  display: block; }
+
+.info {
+    margin: 0.5%;
+}
+
+.sexo {
+  display: inline;
+  margin-top: 10px; }
+
+.reseña {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.botones {
+  display: inline-block;
+  margin: 1%;
+  margin-top: 3%; }
+
+.tituloForm {
+  padding: 1%; }
