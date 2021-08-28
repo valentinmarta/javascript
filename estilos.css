@@ -1,23 +1,84 @@
-input {
-  display: block; }
-
-.info {
-    margin: 0.5%;
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+   background:linear-gradient(#B8EAF2 , white 70%) ; /*graduacion del header */
+  position: fixed;
+  text-align: center;
 }
 
-.sexo {
-  display: inline;
-  margin-top: 10px; }
-
-.reseña {
-    font-size: larger;
-    font-weight: bolder;
+.titulo{
+  height: 190px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
 }
 
-.botones {
-  display: inline-block;
-  margin: 1%;
-  margin-top: 3%; }
+.menu{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
 
-.tituloForm {
-  padding: 1%; }
+.modelo{
+  height: 600px;
+   background-image: url(./img/modelo1.jpg); /*foto del modelo */
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*tamaño y posicion de los iconos de olas en el titulo */
+ .ola{ 
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.blue{
+  color: lightblue;
+}
+
+.info{
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* donde se habla de los envios y diseños */
+.presentacion{
+  margin-top: 30px;
+  margin-right: 160px;
+  margin-left: 80px;
+  text-align: center;
+}
+
+footer{
+  height: 300px;
+  background-image: url(./img/oceano1.jpg); /*foto del oceano en el footer */
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.row{
+  text-align: center;
+}
+
+.col-6{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacto{
+  font-size: 30px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.contacto2{
+  font-weight: bolder;
+  margin: 15px;
+}

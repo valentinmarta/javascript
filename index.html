@@ -1,52 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos.css">
-    <title>Document</title>
-</head>
-<body>
+    <title>Blue Store</title>
+  </head>
+  <body>
 
-<section id="titulos">
+    <!-- barra de navegacion -->
+    <section class="container-fluid header">
+      <header class="d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="navbar-brand menu" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand menu" href="#">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand menu" href="#">Nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
 
-</section>
+    <div class="titulo d-flex justify-content-center">
+      <!-- puse dos iconos de olas junto al h1 -->
+      <img style="display: none;" class="ola titulo1" src="./img/iconoOceano.jpg" alt=""><h1 style="display: none;" class="titulo1"><span style="display: none;" class="blue titulo1">BLUE </span>STORE</h1><img style="display: none;" class="ola titulo1" src="./img/iconoOceano.jpg" alt="">
+    </div>
 
-<form action="" method="" id="formulario">
-    <fieldset>
+    <div class="modelo"></div>
+
+    <section class="container-fluid informacion">
+      <!-- info ordenada con flex -->
+      <div class="info"> 
+        <!-- envios gratis -->
+        <div class="presentacion">
+          <img style="display: none;" class="aparece" src="./img/gratis.png" alt="">
+          <h3 style="display: none;" class="aparece">ENVIO GRATIS</h3>
+          <p style="display: none;" class="aparece">Para compras superiores
+            <br>
+            a los $10.000 
+          </p>
+        </div>
+
+        <!-- amplia variedad de diseños -->
+        <div class="presentacion"> 
+          <img style="display: none;" class="aparece" src="./img/diseños.png" alt="">
+            <h3 style="display: none;" class="aparece">DISEÑOS</h3>
+            <p style="display: none;" class="aparece">
+              Amplia variedad
+              <br>
+              de diseños
+            </p>
+        </div>
+
+        <!-- envios a todo el pais -->
+        <div class="presentacion">
+          <img style="display: none;" class="aparece" src="./img/envios.png" alt="">
+            <h3 style="display: none;" class="aparece" >ENVIOS</h3>
+            <p style="display: none;" class="aparece" >A todo el pais</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+
+      <div style="display: none;" class="container footer">
+
+        <!-- telefono para contactarse -->
+        <div class="row">
+          <div class="col-6 telefono">
+            <h4 class="contacto">CONTACTO:</h4>
+            <p class="contacto2">Numero de telefono: +54 9 351-54697</p>
+            <p class="contacto2">2do numero de telefono: +54 9 351-65869</p>
+          </div>
+
+          <!-- redes sociales -->
+          <div class="col-6 redes">
+            <h4 class="contacto">REDES SOCIALES:</h4>
+            <p class="contacto2">instagram: @Blue_store</p>
+            <p class="contacto2">facebook: Bluestore</p>           
+          </div>
+        </div>
+        
+      </div>
     
-        <div id="form">
-            <h4 class="tituloForm">QUISIERA SABER QUE LE PARECIO LA PAGINA:</h4>
-        </div>
+    </footer>
 
-        <label class="info" for="nombre">Nombre</label>
-        <input class="info" type="text" name="nombre">
-        <label class="info" for="apellido">Apellido</label>
-        <input class="info" type="text" name="apellido">
-        <label class="info" for="email">Correo electronico</label>
-        <input class="info" type="email" name="email">
-
-        <div>
-            Hombre <input class="sexo" type="checkbox" name="sexo" value="hombre"> 
-            Mujer <input class="sexo" type="checkbox" name="sexo" value="mujer"> 
-            Otros <input class="sexo" type="checkbox" name="sexo" value="otros"> 
-        </div>
-
-        <div>
-            <p class="reseña">Deje su reseña aqui:</p> 
-            <textarea class="texto" name="" id="" cols="60" rows="10"></textarea>
-        </div>
-
-        <input class="botones" type="reset" value="Borrar todo">
-        <input class="botones" type="submit" value="Enviar formulario">
-         
-    </fieldset>
-
-</form>
-
-<script> src="https://code.jquery.com/jquery-3.6.0.min.js"</script>
-<script src="./js/main.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
