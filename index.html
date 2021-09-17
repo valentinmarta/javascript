@@ -9,24 +9,23 @@
   </head>
   <body>
 
-    <!-- barra de navegacion -->
-    <section class="container-fluid header">
+    <!-- BARRA DE NAVEGACION -->
+    <section class="headerMenu container-fluid header">
       <header class="d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
+            <div id="navbarNav">
+              <ul class="navbar-nav menuFlex">
                 <li class="nav-item">
                   <a class="navbar-brand menu" aria-current="page" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="navbar-brand menu" href="#">Tienda</a>
+                  <div class="titulo d-flex justify-content-center">
+                    <h1 class="titulo1 store"><span class="blue titulo1">BLUE </span>STORE</h1>
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <a class="navbar-brand menu" href="#">Nosotros</a>
+                  <a class="navbar-brand menu" href="tienda.html">Tienda</a>
                 </li>
               </ul>
             </div>
@@ -34,73 +33,111 @@
         </nav>
       </header>
     </section>
+    <!-- TERMINA BARRA DE NAVEGACION -->
 
-    <div class="titulo d-flex justify-content-center">
-      <!-- puse dos iconos de olas junto al h1 -->
-      <img style="display: none;" class="ola titulo1" src="./img/iconoOceano.jpg" alt=""><h1 style="display: none;" class="titulo1"><span style="display: none;" class="blue titulo1">BLUE </span>STORE</h1><img style="display: none;" class="ola titulo1" src="./img/iconoOceano.jpg" alt="">
+    <!-- MODELO -->
+    <div class="modelo">
+      <p class="marcaLider">Marca lider en Argentina
+        <br>
+        desde 1988
+      </p>
     </div>
 
-    <div class="modelo"></div>
-
+    <!-- INFORMACION DE LA EMPRESA -->
     <section class="container-fluid informacion">
-      <!-- info ordenada con flex -->
+      
       <div class="info"> 
-        <!-- envios gratis -->
+        <!-- ENVIOS GRATIS -->
         <div class="presentacion">
-          <img style="display: none;" class="aparece" src="./img/gratis.png" alt="">
-          <h3 style="display: none;" class="aparece">ENVIO GRATIS</h3>
-          <p style="display: none;" class="aparece">Para compras superiores
+          <img class="aparece imagenInfo" src="./img/gratis.png" alt="">
+          <h4 class="aparece">ENVIO GRATIS</h4>
+          <p class="aparece">Para compras superiores
             <br>
             a los $10.000 
           </p>
         </div>
 
-        <!-- amplia variedad de diseños -->
+        <!-- AMPLIA VARIEDAD DE DISEÑOS -->
         <div class="presentacion"> 
-          <img style="display: none;" class="aparece" src="./img/diseños.png" alt="">
-            <h3 style="display: none;" class="aparece">DISEÑOS</h3>
-            <p style="display: none;" class="aparece">
+          <img class="aparece imagenInfo" src="./img/diseños.png" alt="">
+            <h4 class="aparece">DISEÑOS</h4>
+            <p class="aparece">
               Amplia variedad
               <br>
               de diseños
             </p>
         </div>
 
-        <!-- envios a todo el pais -->
+        <!-- ENVIOS A TODO EL PAIS -->
         <div class="presentacion">
-          <img style="display: none;" class="aparece" src="./img/envios.png" alt="">
-            <h3 style="display: none;" class="aparece" >ENVIOS</h3>
-            <p style="display: none;" class="aparece" >A todo el pais</p>
+          <img class="aparece imagenInfo" src="./img/envios.png" alt="">
+            <h4 class="aparece" >ENVIOS</h4>
+            <p class="aparece" >A todo el pais</p>
+        </div>
+
+        <!-- CALIDAD ASEGURADA -->
+        <div class="presentacion">
+          <img class="aparece imagenInfo imagenRopaInfo" src="./img/ropa.png" alt="">
+            <h5 class="aparece" >CALIDAD ASEGURADA</h5>
+            <p class="aparece" >Por mas de 30 años <br>de experiencia</p>
         </div>
 
       </div>
 
     </section>
+    
+    <!-- MOSTRAR ROPA -->
+    <section class="container-fluid ropa">
+
+      <div class="row fondo">
+
+        <div class="col-6 remeras">
+        </div>
+        <div class="col-6 jeans">
+        </div>
+
+      </div>
+      
+      <div class="row h2">
+        <div class="col-6 textoRopa" style="display: none;"><h2 class="h2Index">LOS MEJORES PRECIOS</h2></div>
+        <div class="col-6 textoRopa" style="display: none;"><h2 class="h2Index">PARA NUESTROS <br> DISEÑOS UNICOS</h2></div>
+      </div>
+    
+      <div class="row opaco"></div>
+
+    </section>
+    
 
     <footer>
 
-      <div style="display: none;" class="container footer">
+      <div class="container-fluid footer">
 
-        <!-- telefono para contactarse -->
-        <div class="row">
-          <div class="col-6 telefono">
+        <!-- TELEFONO PARA CONTACTARSE -->
+        <div class="row rowContacto">
+          <div class="col-4 infoContacto telefono">
             <h4 class="contacto">CONTACTO:</h4>
             <p class="contacto2">Numero de telefono: +54 9 351-54697</p>
             <p class="contacto2">2do numero de telefono: +54 9 351-65869</p>
           </div>
 
-          <!-- redes sociales -->
-          <div class="col-6 redes">
+          <!-- REDES SOCIALES -->
+          <div class="col-4 infoContacto redes">
             <h4 class="contacto">REDES SOCIALES:</h4>
             <p class="contacto2">instagram: @Blue_store</p>
             <p class="contacto2">facebook: Bluestore</p>           
+          </div>
+          
+          <!-- UBICACION -->
+          <div class="col-4 infoContacto">
+            <p class="ubicacion">Ubicacion: Gral. Paz 257</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1924.6758598206438!2d-64.49663554611148!3d-31.422103806852935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1631128065231!5m2!1ses-419!2sar" width="auto" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      
           </div>
         </div>
         
       </div>
     
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/main.js"></script>

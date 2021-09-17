@@ -3,42 +3,132 @@
   padding: 0;
 }
 .header{
-   background:linear-gradient(#B8EAF2 , white 70%) ; /*graduacion del header */
-  position: fixed;
+  background:linear-gradient(#B8EAF2 , white 70%) ; /*GRADUACION DEL HEADER*/
   text-align: center;
+  z-index: 1;
 }
 
+@media (max-width: 790px) { 
+  .headerMenu{
+    width: 800px;
+ }
+} 
+
 .titulo{
-  height: 190px;
-  padding-top: 30px;
+  height: 45px;
   display: flex;
   align-items: center;
 }
 
+.titulo1{
+  font-size: 30px;
+  padding-left: 8px;
+}
+
+.store{
+  padding-right: 35px;
+}
+
 .menu{
   font-family: 'Times New Roman', Times, serif;
-  font-size: 25px;
+  font-size: 28px;
+}
+
+@media (max-width: 992px) {
+  .menuFlex{
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .modelo{
-  height: 600px;
-   background-image: url(./img/modelo1.jpg); /*foto del modelo */
-  background-size: 100%;
+  height: 800px;
+  background-image: url(./img/modelo1.jpg); /*FOTO DEL MODELO*/
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  padding-top: 100px;
+  padding-right: 170px;
 }
 
-/*tamaño y posicion de los iconos de olas en el titulo */
- .ola{ 
-  width: 100px;
-  height: 100px;
-  margin-right: 50px;
-  margin-left: 50px;
+.marcaLider{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: xx-large;
+  text-align: center;
+  text-shadow: 8px 6px 6px #403D42;
 }
+
+@media (max-width: 1200px) {
+  .marcaLider{
+    font-size: x-large;
+ }
+}
+
+@media (max-width: 1060px) {
+  .marcaLider{
+    font-size: large;
+ }
+}
+
+@media (max-width: 970px) {
+  .marcaLider{
+    font-size: medium;
+ }
+}
+
+@media (max-width: 560px) {
+  .marcaLider{
+    display: none;
+ }
+}
+
+@media (max-width: 900px) {
+  .modelo{
+    padding-right: 70px;
+ }
+}
+
+@media (max-width: 790px) {
+  .modelo{
+    padding-right: 30px;
+ }
+
+ .modelo{
+   width: 800px;
+   background-image: url(./img/modelo2.jpg);
+ }
+
+ .informacion{
+   width: 800px;
+ }
+}
+
+@media (max-width: 420px ) { 
+  .modelo{
+    background-image: url(./img/modelo3.jpg);
+  }
+
+  .aparece{
+    font-weight: bold;
+  }
+} 
+
+@media (max-width: 350px ) { 
+  .modelo{
+    width: cover;
+  }
+} 
 
 .blue{
   color: lightblue;
 }
 
+/* INFORMACION ENVIOS Y DISEÑOS */
 .info{
   height: 250px;
   display: flex;
@@ -47,26 +137,190 @@
   align-items: center;
 }
 
-/* donde se habla de los envios y diseños */
 .presentacion{
   margin-top: 30px;
-  margin-right: 160px;
-  margin-left: 80px;
+  margin-right: 100px;
+  margin-left: 70px;
   text-align: center;
 }
 
-footer{
-  height: 300px;
-  background-image: url(./img/oceano1.jpg); /*foto del oceano en el footer */
+.imagenInfo{
+  margin-bottom: 10px;
+}
+
+.imagenRopaInfo{
+  height: 67px;
+}
+
+@media (max-width: 1145px ) { 
+  .aparece{
+    display: initial;
+    font-size: small;
+ }
+} 
+
+@media (max-width: 1080px ) { 
+  .info{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .informacion{
+    height: 400px;
+  }
+} 
+
+.ropa{
+ height: 600px;
+ margin-bottom: 0.5%;
+}
+
+.remeras{
+  height: 600px;
+  width: 765px;
+  background-image: url(./img/remera.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+} 
+
+.jeans{
+  height: 600px;
+  width: 754px;
+  background-image: url(./img/jeans.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.row{
+@media (max-width: 1507px) {
+  .jean{
+    width: 745px;
+  }
+  .remeras{
+    width: 740px;
+  }
+}
+
+@media (max-width: 1487px) {
+  .jean{
+    width: 730px;
+  }
+  .remeras{
+    width: 720px;
+  }
+}
+
+@media (max-width: 1462px) {
+  .jean{
+    width: 700px;
+  }
+  .remeras{
+    width: 690px;
+  }
+}
+
+@media (max-width: 1432px) {
+  .jean{
+    width: 665px;
+    
+  }
+  .remeras{
+    width: 665px;
+  }
+}
+
+@media (max-width: 1407px) {
+  .jean{
+    width: 640px;
+    
+  }
+  .remeras{
+    width: 640px;
+  }
+}
+
+@media (max-width: 1382px) {
+  .jean{
+    width: 615px;
+    
+  }
+  .remeras{
+    width: 615px;
+  }
+}
+
+@media (max-width: 1357px) {
+  .jean{
+    width: 590px;
+    
+  }
+  .remeras{
+    width: 590px;
+  }
+}
+
+@media (max-width: 1332px) {
+  .jean{
+    width: 565px;
+    
+  }
+  .remeras{
+    width: 565px;
+    background-image: url(./img/remera2.jpg);
+  }
+}
+
+@media (max-width: 1307px) {
+  .ropa{
+    display: none;
+  }
+}
+
+.fondo{
+  position: absolute;
+}
+
+.opaco{
+  height: 600px;
+  background-color: #403D42;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.h2{
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  z-index: 2;
+}
+
+.textoRopa{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3%;
+  color: black;
+}
+
+.h2Index{
+  font-size: 45px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer{
+  height: 300px;
+  background-image: url(./img/oceano1.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.rowContacto{
   text-align: center;
 }
 
-.col-6{
+.infoContacto{
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -82,3 +336,148 @@ footer{
   font-weight: bolder;
   margin: 15px;
 }
+
+.ubicacion{
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+}
+
+.aparece {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .contacto2{
+    font-size: small;
+  }
+}
+
+@media (max-width: 840px) {
+  .contacto{
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 790px) {
+  footer{
+    width: 800px;
+  }
+}
+
+/* TIENDA */
+
+.tituloTienda{
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  font-family:'Times New Roman', Times, serif;
+}
+
+@media (max-width: 750px) {
+  .tituloTienda{
+    width: 600px;
+    margin-left: 15%;
+  }
+
+  .productos{
+    width: 600px;
+  }
+
+  .shopping-cart{
+    width: 800px;
+  }
+}
+
+.itemButton{
+  font-weight: bolder;
+  margin-bottom: 2%;
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "filtros productos";
+}
+
+@media (max-width: 1282px) {
+  #grid{
+    grid-template-columns: 150px auto;
+  }
+
+  .botonFiltro{
+    font-size: smaller;
+  }
+}
+
+.filtros{
+  grid-area: filtros;
+  display: flex;
+  flex-direction: column;
+}
+
+.botonFiltro{
+  margin-bottom: 30px;
+  background-color: #ADD8E6;
+  box-shadow: -6px 4px 6px rgb(75, 75, 75);
+  font-size: larger;
+  font-weight: 600;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.botonFiltro:hover{
+  background-color: #1bbedf;
+}
+
+.nuevoColor{
+  background-color: #1bbedf;
+}
+
+.productItem{
+  transition: 0.4s;
+}
+
+.productos{
+  grid-area: productos;
+}
+
+.itemTitulo{
+  text-align: center;
+  font-weight: 800;
+  font-size: medium;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (max-width: 1100px) {
+  .itemTitulo{
+    font-size: 14px;
+  }
+}
+
+.itemImagen{
+  height: auto;
+  width: 200px;
+  box-shadow: -6px 4px 8px rgb(75, 75, 75);
+}
+
+.item{
+  text-align: center;
+  margin-bottom: 15%;
+  transition: 0.4s;
+}
+
+.itemImagen:hover{
+  border: solid black 1px;
+  border-radius: 10px;
+}
+
+.itemPrecio{
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:#505050;
+}
+
+

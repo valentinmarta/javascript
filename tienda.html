@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Tienda Bluestore</title>
+  </head>
+  <body>
+
+    <!-- BARRA DE NAVEGACION -->
+    <section class="headerMenu container-fluid header">
+      <header class="d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <div id="navbarNav">
+              <ul class="navbar-nav menuFlex">
+                <li class="nav-item">
+                  <a class="navbar-brand menu" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <div class="titulo d-flex justify-content-center">
+                    <h1 class="titulo1 store"><span class="blue titulo1">BLUE </span>STORE</h1>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand menu" href="tienda.html">Tienda</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+    <!-- TERMINA BARRA DE NAVEGACION -->
+
+    <h1 class="tituloTienda">Tienda oficial <span class="blue">Blue</span> store</h1>
+
+    <!-- GRID CON PRODUCTOS Y FILTROS -->
+    <section id="grid" class="container-fluid">
+
+      <div class="filtros">
+        <a class="navbar-brand botonFiltro" style="color: black;" href="#" category="todo">Todo</a>
+        <a class="navbar-brand botonFiltro" style="color: black;" href="#" category="mangaCorta">Remeras <br> manga corta</a>
+        <a class="navbar-brand botonFiltro" style="color: black;" href="#" category="mangaLarga">Remeras <br> manga larga</a>
+        <a class="navbar-brand botonFiltro" style="color: black;" href="#" category="jeans">Jeans</a>
+        <a class="navbar-brand botonFiltro" style="color: black;" href="#" category="camisas">Camisas</a>
+      </div>
+
+      <div class="row productos">
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaLarga">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA LARGA BLACK</h3>
+            <img class="itemImagen" src="./img/remeraMangaLargaBlack.jpg" alt="Remera negra mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1200</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaLarga">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA LARGA BLUE</h3>
+            <img class="itemImagen" src="./img/remeraMangaLargaBlue.jpg" alt="Remera azul mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1200</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaLarga">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA LARGA GREY</h3>
+            <img class="itemImagen" src="./img/remeraMangaLargaGrey.jpg" alt="Remera gris mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1200</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaLarga">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA LARGA WHITE</h3>
+            <img class="itemImagen" src="./img/remeraMangaLargaWhite.jpg" alt="Remera blanca mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1200</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaLarga">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA LARGA PURPLE</h3>
+            <img class="itemImagen" src="./img/remeraMangaLargaPurple.jpg" alt="Remera violeta mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1200</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaCorta">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA CORTA BLACK</h3>
+            <img class="itemImagen" src="./img/remeraMangaCortaBlack.jpg" alt="Remera negra mangas cortas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1900</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaCorta">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA CORTA BLUE</h3>
+            <img class="itemImagen" src="./img/remeraMangaCortaBlue.jpg" alt="Remera azul mangas cortas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1900</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaCorta">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA CORTA GREY</h3>
+            <img class="itemImagen" src="./img/remeraMangaCortaGrey.jpg" alt="Remera gris mangas cortas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1900</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaCorta">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA CORTA WHITE</h3>
+            <img class="itemImagen" src="./img/remeraMangaCortaWhite.jpg" alt="Remera blanca mangas cortas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1900</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="mangaCorta">
+          <div class="item">
+            <h3 class="itemTitulo">REMERA MANGA CORTA PURPLE</h3>
+            <img class="itemImagen" src="./img/remeraMangaCortaPurple.jpg" alt="Remera violeta mangas cortas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$1900</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="camisas">
+          <div class="item">
+            <h3 class="itemTitulo">CAMISA MANGA LARGA BLACK</h3>
+            <img class="itemImagen" src="./img/camisaMangaLargaBlack.jpg" alt="camisa negra mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$5380</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="camisas">
+          <div class="item">
+            <h3 class="itemTitulo">CAMISA MANGA LARGA BLUE</h3>
+            <img class="itemImagen" src="./img/camisaMangaLargaBlue.jpg" alt="camisa azul mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$5380</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="camisas">
+          <div class="item">
+            <h3 class="itemTitulo">CAMISA MANGA LARGA GREY</h3>
+            <img class="itemImagen" src="./img/camisaMangaLargaGrey.jpg" alt="camisa gris mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$4270</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="camisas">
+          <div class="item">
+            <h3 class="itemTitulo">CAMISA MANGA LARGA WHITE</h3>
+            <img class="itemImagen" src="./img/camisaMangaLargaWhite.jpg" alt="camisa blanca mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$4270</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="camisas">
+          <div class="item">
+            <h3 class="itemTitulo">CAMISA MANGA LARGA PURPLE</h3>
+            <img class="itemImagen" src="./img/camisaMangaLargaPurple.jpg" alt="camisa violeta mangas largas">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$4270</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="jeans">
+          <div class="item">
+            <h3 class="itemTitulo">JEAN TEXAS BLACK</h3>
+            <img class="itemImagen" src="./img/JeanTexasBlack.jpg" alt="jean negro">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$4900</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+          
+        </div>
+  
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="jeans">
+          <div class="item">
+            <h3 class="itemTitulo">JEAN NEVADA BLUE</h3>
+            <img class="itemImagen" src="./img/JeanNevadaBlue.jpg" alt="jean azul nevada">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$5590</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="jeans">
+          <div class="item">
+            <h3 class="itemTitulo">JEAN ARIZONA BLUE</h3>
+            <img class="itemImagen" src="./img/JeanArizonaBlue.jpg" alt="jean azul arizona">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$5590</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="jeans">
+          <div class="item">
+            <h3 class="itemTitulo">JEAN OKLAHOMA BLACK</h3>
+            <img class="itemImagen" src="./img/JeanOklahomaBlack.jpg" alt="jean negro oklahoma">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$4900</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 productItem" category="jeans">
+          <div class="item">
+            <h3 class="itemTitulo">JEAN ALABAMA BLUE</h3>
+            <img class="itemImagen" src="./img/JeanAlabamaBlue.jpg" alt="jean azul alabama">
+            <div class="itemDetalles">
+              <p class="itemPrecio">$5590</p> 
+              <button type="button" class="itemButton btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EMPIEZA SECCION CARRITO -->
+    <section class="shopping-cart"> 
+
+      <div class="container">
+
+        <h1 class="text-center">CARRITO</h1>
+        <hr>
+
+        <div class="row">
+
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Producto</h6>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="shopping-cart-header">
+              <h6 class="text-truncate">Precio</h6>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="shopping-cart-header">
+              <h6>Cantidad</h6>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- EMPIEZAN LOS ITEMS DEL CARRITO-->
+        <div class="shopping-cart-items shoppingCartItemsContainer">
+        
+        </div>
+        <!-- TERMINAN LOS ITEMS DE CARRITO-->
+
+        <!-- EMPIEZA EL TOTAL -->
+        <div class="row">
+          <div class="col-10">
+
+            <div class="shopping-cart-total d-flex align-items-center">
+
+              <p class="mb-0">Total</p>
+              <p class="ml-4 mb-0 shoppingCartTotal">$0</p>
+
+              <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">       
+
+                <div class="toast-header">
+                  <span>✅</span>
+                  <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="toast-body text-white">
+                  Se aumentó correctamente la cantidad
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-2">
+            <button class="btn btn-success ml-auto comprarButton" type="button">Comprar</button>
+          </div>
+          
+        </div>
+        <!-- TERMINA EL TOTAL -->
+
+      </div>
+
+    </section>
+    <!-- TERMINA LA SECCION DEL CARRITO -->
+
+    <footer>
+
+      <div class="container footer">
+
+        <!-- TELEFONO PARA CONTACTARSE -->
+        <div class="row rowContacto">
+          <div class="col-4 infoContacto telefono">
+            <h4 class="contacto">CONTACTO:</h4>
+            <p class="contacto2">Numero de telefono: +54 9 351-54697</p>
+            <p class="contacto2">2do numero de telefono: +54 9 351-65869</p>
+          </div>
+
+          <!-- REDES SOCIALES -->
+          <div class="col-4 infoContacto redes">
+            <h4 class="contacto">REDES SOCIALES:</h4>
+            <p class="contacto2">instagram: @Blue_store</p>
+            <p class="contacto2">facebook: Bluestore</p>           
+          </div>
+
+          <!-- UBICACION -->
+          <div class="col-4 infoContacto">
+            <p class="ubicacion">Ubicacion: Gral. Paz 257</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1924.6758598206438!2d-64.49663554611148!3d-31.422103806852935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1631128065231!5m2!1ses-419!2sar" width="auto" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>     
+          </div>
+        </div>
+        
+      </div>
+    
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
